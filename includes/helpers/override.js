@@ -13,7 +13,7 @@ const cheerio = require('cheerio');
 
 module.exports = function (hexo) {
     hexo.extend.helper.register('_list_archives', function () {
-        const $ = cheerio.load(this.list_archives(), { decodeEntities: false });
+        const $ = cheerio.load(this.list_archives({ format: "YYYY/MM" }), { decodeEntities: false });
         const archives = [];
         $('.archive-list-item').each(function () {
             archives.push({
@@ -119,7 +119,7 @@ module.exports = function (hexo) {
             }
             node.id = id;
             node.text = text;
-            node.index = levels.slice(0, level + 1).join('.');
+            node.index = '-';
         });
         return toc;
     });

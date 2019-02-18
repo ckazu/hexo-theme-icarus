@@ -11,23 +11,23 @@ common:
     post:
         one: '投稿'
         other: '投稿'
-    prev: '前'
-    next: '次'
+    prev: '前へ'
+    next: '次へ'
 widget:
     follow: 'フォローする'
     recents: '最近の記事'
     links: 'リンク'
     tag_cloud: 'タグクラウド'
-    catalogue: 'カタログ'
+    catalogue: '目次'
 article:
-    more: 'Read More'
+    more: '< 続きを読む >'
     comments: 'コメント'
-    read: 'read'
-    about: 'About'
-    words: 'words'
+    read: 'この記事は約%sで読むことができます'
+    about: '約'
+    words: '語'
 search:
     search: 'Search'
-    hint: 'Type something...'
+    hint: '検索語句を入力してください...'
 insight:
     hint: 'Type something...'
     posts: '投稿'
