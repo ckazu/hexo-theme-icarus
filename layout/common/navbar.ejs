@@ -23,8 +23,12 @@
                     <% let links = get_config('navbar.links'); %>
                     <% for (let name in links) {
                             let link = links[name]; %>
-                    <a class="navbar-item" target="_blank" title="<%= name %>" href="<%= url_for(typeof(link) === 'string' ? link : link.url) %>">
-                        <% if (typeof(link) === 'string') { %>
+
+                  <a class="navbar-item"
+                     title="<%= name %>"
+                     target="<%= link.external_link == true ? '_blank' : '_self' %>"
+                     href="<%= url_for(typeof(link) === 'string' ? link : link.url) %>">
+                    <% if (typeof(link) === 'string') { %>
                         <%= name %>
                         <% } else { %>
                         <i class="<%= link.icon %>"></i>
