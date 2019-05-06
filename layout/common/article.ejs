@@ -46,6 +46,9 @@
         </h1>
 
         <div class="content">
+            <% if (!index && has_config('share.type')) { %>
+                <%- partial('share/' + get_config('share.type')) %>
+            <% } %>
             <%- index && post.excerpt ? post.excerpt : post.content %>
         </div>
         <% if (!index && post.tags && post.tags.length) { %>

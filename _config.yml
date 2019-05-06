@@ -37,9 +37,9 @@ comment:
 
 # Share plugin settings
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Share-Plugins
-share:
-    # Share plugin name
-    type: 
+# share:
+#     # Share plugin name
+#     type:
 
 # Sidebar settings.
 # Please be noted that a sidebar is only visible when it has at least one widget
