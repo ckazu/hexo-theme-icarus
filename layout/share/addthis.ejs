@@ -3,6 +3,6 @@
     You need to set <code>install_url</code> to use AddThis. Please set it in <code>_config.yml</code>.
 </div>
 <% } else { %>
-<div class="addthis_inline_share_toolbox"></div>
+<div class="addthis_inline_share_toolbox<%= get_config('share.inline_tool_id') ? '_' + get_config('share.inline_tool_id') : '' %>"></div>
 <script type="text/javascript" src="<%= get_config('share.install_url') %>"></script>
 <% } %>
