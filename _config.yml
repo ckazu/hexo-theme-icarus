@@ -76,6 +76,9 @@ widgets:
     -
         type: tagcloud
         position: right
+    -
+        type: twitter
+        position: right
 
 # CDN provider settings
 # http://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
